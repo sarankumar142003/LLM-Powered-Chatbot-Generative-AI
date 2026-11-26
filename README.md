@@ -1,148 +1,90 @@
-🤖 LLM-Powered Chatbot | Generative AI
+🤖 Gemini AI Power Chatbot
 
-An interactive AI-powered chatbot built using Ollama, Streamlit, and Large Language Models (LLMs). This application enables users to communicate with locally running LLMs and receive intelligent, context-aware responses through a simple and user-friendly web interface.
-
-🚀 Project Overview
-
-This project demonstrates the practical implementation of Generative AI using locally hosted Large Language Models.
-
-Ollama is used to run LLMs locally, while Streamlit provides an interactive web-based chatbot interface. Users can ask questions and receive AI-generated responses in real time without depending on cloud-based LLM APIs.
+An intelligent, modern AI-powered chatbot built using the Google Gemini API. Experience fast, smart, and interactive conversations with Google's Gemini AI model.
 
 ✨ Features
-🤖 LLM Integration: Uses Ollama to run Large Language Models locally.
-💬 Interactive Chat Interface: Built with Streamlit for a user-friendly experience.
-🧠 AI-Powered Responses: Generates natural and meaningful responses.
-🔒 Local Model Execution: Supports running models on your local machine.
-⚡ Real-Time Interaction: Provides responses dynamically.
-📚 Contextual Conversations: Supports conversational history, if implemented.
+🤖 AI-Powered Conversations – Get intelligent responses using Google Gemini.
+⚡ Fast Responses – Powered by the Gemini Flash Lite model.
+💬 Real-Time Chat – Enjoy smooth and interactive conversations.
+🎨 Modern UI – Clean, responsive, and user-friendly interface.
+📱 Responsive Design – Works on desktop, tablet, and mobile devices.
+🧠 Smart AI Assistant – Ask questions, generate ideas, and get help.
+🔐 API Integration – Connect securely with the Gemini API.
+🧠 AI Model
+Provider: Google Gemini
+Model: gemini-3.5-flash-lite
+API: Google Gemini API
 🛠️ Technologies Used
-Technology	Purpose
-Python	Core programming language
-Ollama	Local LLM execution
-Streamlit	Web-based user interface
-Large Language Models	Text generation and understanding
-📂 Project Structure
-text
-LLM-Powered-Chatbot/
-│
-├── app.py                  # Streamlit chatbot application
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-└── ...
-
-⚙️ Installation and Setup
+HTML5
+CSS3
+JavaScript
+Google Gemini API
+🚀 Getting Started
 1. Clone the Repository
 bash
-git clone <your-repository-url>
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 
-2. Navigate to the Project Folder
+2. Open the Project
 bash
-cd LLM-Powered-Chatbot
+cd YOUR-REPOSITORY
 
-3. Install Ollama
+3. Configure Gemini API Key
+Visit Google AI Studio.
+Generate your Gemini API key.
+Configure your API key in your backend environment variables.
 
-Download and install Ollama from:
+Example .env:
 
-https://ollama.com/
+env
+GEMINI_API_KEY=your_gemini_api_key_here
 
-Verify the installation:
+4. Run the Project
 
-bash
-ollama --version
+Start your backend server and open the application in your browser.
 
-4. Download an LLM Model
-
-For example, pull the Llama 3.2 model:
-
-bash
-ollama pull llama3.2
-
-
-Run the model:
-
-bash
-ollama run llama3.2
-
-
-Make sure the model name matches the one configured in your Python application.
-
-5. Create a Virtual Environment
-bash
-python -m venv venv
-
-
-Activate the environment:
-
-Windows:
-
-bash
-venv\Scripts\activate
-
-
-Linux / macOS:
-
-bash
-source venv/bin/activate
-
-6. Install Python Dependencies
-bash
-pip install -r requirements.txt
-
-
-If you don't have a requirements file yet, install:
-
-bash
-pip install streamlit ollama
-
-7. Run the Application
-
-Ensure Ollama is running, then execute:
-
-bash
-streamlit run app.py
-
-
-The application will open in your browser, typically at:
-
+📂 Project Structure
 text
-http://localhost:8501
+Gemini-AI-Chatbot/
+│
+├── index.html
+├── style.css
+├── script.js
+├── server.js
+├── .env
+├── .gitignore
+└── README.md
 
-🔄 How It Works
-The user enters a question in the Streamlit chat interface.
-Streamlit captures the user input.
-The input is sent to the locally running Ollama model.
-The LLM processes the query and generates a response.
-The generated response is displayed in the Streamlit interface.
-The conversation continues interactively.
-🎯 Applications
-Personal AI assistants
-Intelligent question-answering systems
-Educational chatbots
-Customer support assistants
-Local AI experimentation
-Generative AI applications
-🔮 Future Enhancements
-Add conversation memory and chat history.
-Integrate Retrieval-Augmented Generation (RAG).
-Support PDF and document-based question answering.
-Add support for multiple Ollama models.
-Implement voice-based conversations.
-Improve chatbot response evaluation.
-Deploy the application for remote access.
+
+Note: Adjust the structure according to your actual project files.
+
+🔑 API Security
+Never publish your Gemini API key.
+Store API keys in environment variables.
+Add .env to .gitignore.
+Make API requests through a secure backend.
+🌟 Future Improvements
+Chat history and conversation management
+Voice input and output
+Image understanding
+Multiple AI models
+Dark and light themes
+Markdown and code highlighting
 🤝 Contributing
 
 Contributions are welcome!
 
-Fork the repository.
+Fork this repository.
 Create a new branch.
-Implement your changes.
+Make your changes.
 Submit a pull request.
 📜 License
 
-This project is intended for educational and learning purposes. Add a suitable open-source license before distributing it.
+This project is open-source. You can modify and use it according to the terms of your chosen license.
 
-👨‍💻 Author
+👨‍💻 Developer
 
-Developed as a Generative AI project to explore local Large Language Models using Ollama and Streamlit.
+Gemini AI Power Chatbot
 
-⭐ If you find this project useful, don't forget to star the repository!
+Built with ❤️ using Google Gemini AI.
+
+⭐ If you like this project, don't forget to star the repository!
