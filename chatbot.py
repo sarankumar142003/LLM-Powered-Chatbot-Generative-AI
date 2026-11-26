@@ -1,14 +1,19 @@
-from langchain_ollama import ChatOllama
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import streamlit as st
+from dotenv  import load_dotenv
+
+load_dotenv()
+
 st.set_page_config(page_title="AI Powered Chatbot", page_icon="🤖")
 st.title("🤖 AI Powered Chatbot ")
 st.caption('Type EXIT to quit the conversation')
+
 @st.cache_resource
 def llm_lode():
-    return ChatOllama(
-        model="gemma2:2b",
+    return ChatGoogleGenerativeAI(
+        model="gemini-3.5-flash-lite",
         temperature=0.1)
 llm=llm_lode()
 parser=StrOutputParser()
