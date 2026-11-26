@@ -8,7 +8,6 @@ load_dotenv()
 
 st.set_page_config(page_title="AI Powered Chatbot", page_icon="🤖")
 st.title("🤖 AI Powered Chatbot ")
-st.caption('Type EXIT to quit the conversation')
 
 @st.cache_resource
 def llm_lode():
@@ -50,9 +49,6 @@ if st.session_state.ended:
 user_input=st.chat_input("YOU")
 if user_input:
     user_input=user_input.strip()
-    if user_input.lower()=="exit":
-        st.session_state.ended=True
-        st.rerun()
     chat_his.append(("user",user_input))
     with st.chat_message("user"):
         st.markdown(user_input)
